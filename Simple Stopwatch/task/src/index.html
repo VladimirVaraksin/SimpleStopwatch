@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Stopwatch</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1, #timer {
+            font-size: 50px;
+        }
+        #start, #stop, #reset, #lap {
+            background-color: #008CBA; /* Blue */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+        }
+        ol {
+            text-align: center; /* Zentriert den gesamten Text */
+            list-style-position: inside; /* Die Nummer wird in der Liste zentriert */
+            padding: 0; /* Entfernt unnötige Einrückungen */
+            margin: 0 auto; /* Zentriert die gesamte Liste */
+            width: 200px; /* Passt die Breite der Liste an */
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Stopwatch</h1>
+    <p id = "timer">00:00:00</p>
+    <button id = "start">Start</button>
+    <button id = "stop">Stop</button>
+    <button id = "reset">Reset</button>
+    <button id = "lap">Lap</button>
+    <ol id = "laps"></ol>
+    <script defer src = "index.js"></script>
+</body>
+</html>
